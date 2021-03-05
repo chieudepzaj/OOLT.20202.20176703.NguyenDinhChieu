@@ -10,6 +10,7 @@ public static void main(String[] args) {
 	int n = 0,m = 0,check=0;
 	int number_Of_DaysInMonth = 0;
 	String MonthOfName = "unknown";
+	// inputing and checking the month
 	do {
 		month = JOptionPane.showInputDialog(null,"Enter the month :");
 		for(int i=0;i<=11;i++)
@@ -42,11 +43,13 @@ public static void main(String[] args) {
 			}
 		}
 	}while(n!=1);
+	// inputing and checking the year
 		do {
 			String Sy = JOptionPane.showInputDialog(null,"Enter the year: ");
 			year = Integer.parseInt(Sy);	
 			if(year>=0) {m = 1;}
 		} while (m!=1);
+	//compare and show number of days in month
 		switch (check) {
         case 1:
             MonthOfName = "January";
